@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Album</title>
+    <style>
+        h2{
+            text-align: center;
+        }
+
+        .jumbotron {
+          background-image: url(https://www.repstatic.it/content/nazionale/img/2018/08/31/111438655-60dd072d-7fe0-407e-90c9-24a951010de4.jpg);
+          height:50vh;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+
+        
+    </style>
+  </head>
+  <body>
+
+
+    <!--
+ASSIGNMENT RULES
+- The solution must be pushed to the repository and be available for the tutors by the end of the day
+- You can ask for tutor's help
+- You can google / use StackOverflow BUT we suggest you to use just the material provided
+- To test the page, just open it with your default browser.
+- Use Bootstrap4 classes to render the page.
+- Use correctly containers and rows in order to have a great display
+ASSIGNMENT TOPIC 
+You are creating a website to showcase your favourite albums.
+In this page you'd like to have a short bio of yourself, the top albums of your life, 
+the worst album you ever listen to and everything related to the music you love.
+IMPORTANT:
+Start from the previous assignment
+NOTE:
+Most of the time, even the most expert of designers, need inspiration.
+Spend 30 minutes surfing the web and searching for the way of rapresenting album that you like the most.
+Could be the Amazon way, the Spotity or Apple music way or some other blog out there.
+-->
+​
+        <!-- IMPORT ALL THE BOOSTRAP RELATED CSS & SCRIPTS-->
+​
+        
+         <!-- PREVIOUS STUFF -->
+        
+    
+      <!-- EXERCISE 1
+        Use the specific bootstrap component to implement a Breadcrumb
+        -->
+​
+        
+        <!-- EXERCISE 2
+            Create a Jumbotron section with a quick explanation / image of the website
+        -->
+​
+        <!-- EXERCISE 3
+            Foreach album in the favorite list, place the genre inside a badge
+        -->
+​
+        <!-- EXERCISE 4
+            Foreach album in the favorite list, use the Bootstrap Card to contain it.
+            Use card layouts to format it in the best and more compatible way.
+        -->
+​
+        <!-- EXERCISE 5
+            Place the tracklist inside a Bootstrap table.
+            The row column must be alternate.
+            Use one column for the track order, one of the title and one for the length.
+            (If you want, you can also add extra columns)
+        -->
+​
+        <!-- EXERCISE 6
+            Add a DELETE bootstrap button on each row of the tracklist.
+            Clicking on the button the row must disappear
+        -->
+​
+        <!-- EXERCISE 7
+            Add a "Contact Me" form in the footer.
+            The "Contact Me" form has 2 fields:
+            - Email
+            - Text of the message
+            Use the correct Bootstrap styles for styling the buttons
+        -->
+​
+        <!-- EXERCISE 8 
+            Add to the footer an extra column with the same links of the top nav.
+        -->
+​
+         <!-- EXERCISE 9
+            Add a button "Add Track" under the track list the album
+        -->
+​
+        <!-- EXERCISE 10
+            On "Add Track" button, open a new modal.
+            The modal shall contain a form with:
+            - Track number
+            - Track name
+            - Track lenght
+            - Track featuring
+            - Live Track (checkbox)
+            The fields should be inside an Input Group and divided in 2 columns.
+        -->
+​
+        <!-- EXERCISE 11
+            Add 2 bootstrap buttons at the bottom of the modal window:
+            - Close => clear the fields and close the modal
+            - Add => Add the track to the list of tracks in the main page and display an alert success message 
+            https://getbootstrap.com/docs/4.3/components/alerts/
+            [EXTRA] Make the message disappear after 5 seconds
+            https://www.w3schools.com/jsref/met_win_settimeout.asp
+        -->
+  
+        <!-- EXERCISE 12
+            All the field (except for Feat. and Live Track) are required fields and requires validation.
+            If the user clicks on the Add button and some fields are empty, a warning alert must be show
+        -->
+​
+        <!-- EXERCISE 13
+            For each "Album cover" in your page, add a tooltip with the title
+        -->
+​
+        <!-- EXERCISE 14
+            Update the header and footer links using scrollspy to render a smooth transition to the parts of the document.
+        -->
+​
+         <!-- EXERCISE 15
+            Add a Album Carousel with controls to display the top 10 albums
+        -->
+​
+        <!-- EXERCISE 16
+            Make every section of the page "collapsable" if the user clicks on the section title
+        -->
+
+
+    
+      
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Library</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Data</li>
+        </ol>
+      </nav>
+
+      <div class="jumbotron">
+  <div class="container" style="color:white">
+   
+    <h1 class="display-4">Albums</h1>
+    <p class="lead">List of our favourite albums</p>
+    </div>
+</div>
+      
+<div class="Favourite-albums">
+    <h2>Favourite albums</h2>
+    <div class="container" style="margin-top: 80px;">
+        <div class="row row-cols-1 row-cols-md-3">
+          <div class="col mb-4">
+            <div class="card" style="width:400px">
+              <img src="https://cdn.shopify.com/s/files/1/2018/8867/files/play-button.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text"><li class="Title"> Album title : Kamikaze</li>
+              <li class="Artist"> Artist : Eminem</li>
+              <span class="badge badge-secondary"><li class="Genre">Genre: HipHo</li></span></p>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+              <div class="card" style="width:400px">
+                  <img src="https://cdn.shopify.com/s/files/1/2018/8867/files/play-button.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text"><li class="Title"> Album title : Kamikaze</li>
+              <li class="Artist"> Artist : Eminem</li>
+              <span class="badge badge-secondary"><li class="Genre">Genre: HipHo</li></span></p>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+              <div class="card" style="width:400px">
+                  <img src="https://cdn.shopify.com/s/files/1/2018/8867/files/play-button.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text"><li class="Title"> Album title : Kamikaze</li>
+              <li class="Artist"> Artist : Eminem</li>
+              <span class="badge badge-secondary"><li class="Genre">Genre: HipHo</li></span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="row row-cols-1 row-cols-md-3">
+          <div class="col mb-4">
+            <div class="card" style="width:400px">
+              <img src="https://cdn.shopify.com/s/files/1/2018/8867/files/play-button.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text"><li class="Title"> Album title : Kamikaze</li>
+              <li class="Artist"> Artist : Eminem</li>
+              <span class="badge badge-secondary"><li class="Genre">Genre: HipHo</li></span></p>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+              <div class="card" style="width:400px">
+                  <img src="https://cdn.shopify.com/s/files/1/2018/8867/files/play-button.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text"><li class="Title"> Album title : Kamikaze</li>
+                    <li class="Artist"> Artist : Eminem</li>
+                    <span class="badge badge-secondary"><li class="Genre">Genre: HipHo</li></span></p>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+              <div class="card" style="width:400px">
+                  <img src="https://cdn.shopify.com/s/files/1/2018/8867/files/play-button.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text"><li class="Title"> Album title : Kamikaze</li>
+              <li class="Artist"> Artist : Eminem</li>
+              <span class="badge badge-secondary"><li class="Genre">Genre: HipHo</li></span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="row row-cols-1 row-cols-md-3">
+          <div class="col mb-4">
+            <div class="card" style="width:400px">
+              <img src="https://cdn.shopify.com/s/files/1/2018/8867/files/play-button.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text"><li class="Title"> Album title : Kamikaze</li>
+              <li class="Artist"> Artist : Eminem</li>
+              <span class="badge badge-secondary"><li class="Genre">Genre: HipHo</li></span></p>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+              <div class="card" style="width:400px">
+                  <img src="https://cdn.shopify.com/s/files/1/2018/8867/files/play-button.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text"><li class="Title"> Album title : Kamikaze</li>
+              <li class="Artist"> Artist : Eminem</li>
+              <span class="badge badge-secondary"><li class="Genre">Genre: HipHo</li></span></p>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+              <div class="card" style="width:400px">
+                  <img src="https://cdn.shopify.com/s/files/1/2018/8867/files/play-button.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text"><li class="Title"> Album title : Kamikaze</li>
+              <li class="Artist"> Artist : Eminem</li>
+              <span class="badge badge-secondary"><li class="Genre">Genre: HipHo</li></span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
+</div>
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Title</th>
+        <th scope="col">Lenght</th>
+        <th scope="col">Delete Rows</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>The Ringer</td>
+        <td>2:58</td>
+        <td><button type="button" class="btn btn-primary btn-sm">Delete</button></td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Lucky You</td>
+        <td>4:02</td>
+        <td><button type="button" class="btn btn-primary btn-sm">Delete</button></td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Fall</td>
+        <td>3:32</td>
+        <td><button type="button" class="btn btn-primary btn-sm">Delete</button></td>
+      </tr>
+      <tr>
+        <th scope="row">4</th>
+        <td>Good Guy</td>
+        <td>2:59</td>
+        <td><button type="button" class="btn btn-primary btn-sm">Delete</button></td>
+      </tr>
+      <tr>
+        <th scope="row">5</th>
+        <td>Not Alike</td>
+        <td>3:27</td>
+        <td><button type="button" class="btn btn-primary btn-sm">Delete</button></td>
+      </tr>
+      <tr>
+        <th scope="row">6</th>
+        <td>Greatest</td>
+        <td>4:01</td>
+        <td><button type="button" class="btn btn-primary btn-sm">Delete</button></td>
+      </tr>
+      <tr>
+        <th scope="row">7</th>
+        <td>Normal</td>
+        <td>6:12</td>
+        <td><button type="button" class="btn btn-primary btn-sm">Delete</button></td>
+      </tr>
+      <tr>
+        <th scope="row">8</th>
+        <td>Paul</td>
+        <td>3:34</td>
+        <td><button type="button" class="btn btn-primary btn-sm">Delete</button></td>
+      </tr>
+      <tr>
+        <th scope="row">9</th>
+        <td>Venom</td>
+        <td>4:56</td>
+        <td><button type="button"  onclick="deleteButton()" class="btn btn-primary btn-sm">Delete</button></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <script>
+      function deleteButton() {
+          let x = document.querySelectorAll
+          
+      }
+
+  </script>
+  
+  
+       
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html> 
